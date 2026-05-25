@@ -1,0 +1,214 @@
+/* Header styling with smartphone theme */
+header {
+  background: linear-gradient(135deg, #4A90E2, #87CEFA); /* Blue gradient */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3em;
+  animation: moveLeftToRight 5s linear infinite;
+  position: relative;
+}
+
+header h1::after {
+  content: "📱"; /* Smartphone icon */
+  position: absolute;
+  right: -30px;
+  top: -20px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #FFD700; /* Gold color on hover */
+}
+
+/* Image container for the smartphone */
+.image-container {
+  position: relative;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.product-image {
+  width: 500px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Popup styles for clickable areas (battery, display, camera, etc.) */
+.popup {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #333;
+  padding: 20px;
+  z-index: 1000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-overlay.active {
+  display: block;
+}
+
+.popup-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  display: none;
+}
+
+.area {
+  position: absolute;
+  cursor: pointer;
+}
+
+/* Review section styling */
+.review-input h2 {
+  font-size: 1.8em;
+  color: #4A90E2; /* Blue header */
+}
+
+#full-review {
+  border: 2px solid #4A90E2;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+#full-review::placeholder {
+  color: #aaa;
+}
+
+/* Footer styling */
+footer {
+  background: linear-gradient(45deg, #4A90E2, #87CEFA); /* Light blue gradient */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer h2 {
+  font-size: 1.5em;
+}
+
+footer p {
+  font-size: 1.1em;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #FFD700;
+}
+
+/* Main content */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-details {
+  background: linear-gradient(45deg, #fff, #F0F3F4);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.product-details h1 {
+  color: #4A90E2; /* Header blue */
+  font-size: 2em;
+}
+
+.product-details .product-price {
+  color: #FF4500; /* Orange-Red for price */
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.product-details .product-description {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.add-to-cart {
+  background: linear-gradient(45deg, #4A90E2, #87CEFA);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background: linear-gradient(45deg, #008CBA, #0073E6);
+}
+
+/* Popup paragraph and button */
+.popup p {
+  margin: 0;
+  padding: 10px;
+}
+
+.popup button {
+  margin-top: 10px;
+}
+
+/* Chart styling (if used) */
+.pie-chart {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pie-chart canvas {
+  display: block;
+  margin: 0 auto;
+}
