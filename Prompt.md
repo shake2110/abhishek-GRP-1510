@@ -589,7 +589,7 @@ Why frontend structure is used:
 ---
 
 ## 12. Files To Create
-
+``` text
 project-root/
 │
 ├── public/
@@ -616,8 +616,7 @@ project-root/
 ├── .gitignore
 └── README.md
 
-
-
+```
 ---
 
 ## 13. Performance & Scalability
