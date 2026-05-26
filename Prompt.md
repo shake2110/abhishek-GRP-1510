@@ -589,50 +589,35 @@ Why frontend structure is used:
 ---
 
 ## 12. Files To Create
-
-### Backend
-
-```text
-backend/
-|
-├── app.py
-├── config/
-├── models/
-├── routes/
-├── controllers/
-├── services/
-├── utils/
-├── requirements.txt
-└── .env
 ```
-
-### Frontend
-
-```text
-frontend/
-|
+Golden_Respose/
+│
+├── public/
+│
 ├── src/
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   ├── index.css
 │   ├── components/
 │   ├── pages/
 │   ├── services/
 │   ├── assets/
-│   └── App.js
-|
-├── public/
-└── package.json
+│   └── utils/
+│
+├── app.py
+├── backend_test.py
+├── package.json
+├── package-lock.json
+├── requirements.txt
+├── Dockerfile
+├── docker-compose.yml
+├── .dockerignore
+├── .gitignore
+└── README.md
 ```
 
-### Model
 
-```text
-model/
-|
-├── sentiment_model.py
-├── aspect_extractor.py
-├── preprocessing.py
-├── tokenizer.py
-└── inference.py
-```
 
 ---
 
