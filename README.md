@@ -1,7 +1,38 @@
-<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Repository Structure
+
+```
+Golden_Respose/
+│
+├── public/
+│
+├── src/
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   ├── index.css
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── assets/
+│   └── utils/
+│
+├── app.py
+├── backend_test.py
+├── package.json
+├── package-lock.json
+├── requirements.txt
+├── Dockerfile
+├── docker-compose.yml
+├── .dockerignore
+├── .gitignore
+└── README.md
+```
+
+
 
 ## Available Scripts
 
@@ -69,7 +100,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# SentimentReviewClassifier
-AI Based Sentiment Analysis Project
->>>>>>> 00c55d8b2a97daa4f3695f43eecebbe2415db9a1

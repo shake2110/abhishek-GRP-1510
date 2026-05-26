@@ -589,8 +589,8 @@ Why frontend structure is used:
 ---
 
 ## 12. Files To Create
-```
-Golden_Respose/
+
+project-root/
 │
 ├── public/
 │
@@ -615,7 +615,6 @@ Golden_Respose/
 ├── .dockerignore
 ├── .gitignore
 └── README.md
-```
 
 
 
